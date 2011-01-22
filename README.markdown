@@ -11,6 +11,27 @@ implement a WebDAV server, for instance.
 
 ## Using Sinatra Verbs
 
+### Using Sinatra::Base
+
+require 'sinatra/base'
+require 'sinatra/verbs'
+
+Sinatra::Verbs.custom :mkcol, :hello
+
+class MyApp < Sinatra::Base
+  mkcol '/hi' do
+    "Hello, this is MKCOL verb"
+  end
+
+  hello '/hi' do
+    "Hello, this is HELLO verb"
+  end
+
+  run!
+end
+
+### Classic
+
     require 'sinatra'
     require 'sinatra/verbs'
     
@@ -26,7 +47,7 @@ implement a WebDAV server, for instance.
 
 ## Lightning-fast testing
 
-Write the previous example to a file, say: test-sinatra-verbs.rb
+Write one of the previous examples to a file, say: test-sinatra-verbs.rb
 
     ruby test-sinatra-verbs.rb
 
