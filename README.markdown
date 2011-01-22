@@ -1,3 +1,5 @@
+# Sinatra Verbs
+
 ## What is Sinatra Verbs ?
 
 Sinatra Verbs is a Sinatra extension that allows you to extend regular supported HTTP verbs. It can be used just for fun, or to 
