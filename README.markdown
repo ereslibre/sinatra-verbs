@@ -30,6 +30,8 @@ Write the previous example to a file, say: test-sinatra-verbs.rb
 
     ruby test-sinatra-verbs.rb
 
+Now let's start a telnet session:
+
     telnet localhost 4567
     > HELLO /hi HTTP/1.1<ENTER>
     > <ENTER>
