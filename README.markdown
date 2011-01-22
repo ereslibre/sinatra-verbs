@@ -23,3 +23,22 @@ implement a WebDAV server, for instance.
     hello '/hi' do
       "Hello, this is HELLO verb"
     end
+
+## Lightning-fast testing
+
+Write the previous example to a file, say: test-sinatra-verbs.rb
+
+    ruby test-sinatra-verbs.rb
+
+    telnet localhost 4567
+    > HELLO /hi HTTP/1.1<ENTER>
+    > <ENTER>
+
+    < HTTP/1.1 200 OK 
+    < Content-Type: text/html;charset=utf-8
+    < Content-Length: 25
+    < Server: WEBrick/1.3.1 (Ruby/1.9.2/2010-12-25)
+    < Date: Sat, 22 Jan 2011 01:39:58 GMT
+    < Connection: Keep-Alive
+    <
+    < Hello, this is HELLO verb
