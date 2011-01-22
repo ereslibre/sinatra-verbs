@@ -1,5 +1,9 @@
 module Sinatra
   module Verbs
+    # Defines custom HTTP verbs.
+    #
+    # This method exposes enough API to use this custom verbs in both Sinatra styles: the classic one,
+    # and inheriting Sinatra::Base. You work with them as if they were regular HTTP verbs.
     def self.custom(*verbs)
       verbs.each do |verb_name|
         ::Sinatra::Delegator.module_eval <<-RUBY
