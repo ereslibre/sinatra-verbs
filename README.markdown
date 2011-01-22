@@ -13,22 +13,22 @@ implement a WebDAV server, for instance.
 
 ### Using Sinatra::Base
 
-require 'sinatra/base'
-require 'sinatra/verbs'
+    require 'sinatra/base'
+    require 'sinatra/verbs'
 
-Sinatra::Verbs.custom :mkcol, :hello
+    Sinatra::Verbs.custom :mkcol, :hello
 
-class MyApp < Sinatra::Base
-  mkcol '/hi' do
-    "Hello, this is MKCOL verb"
-  end
+    class MyApp < Sinatra::Base
+      mkcol '/hi' do
+        "Hello, this is MKCOL verb"
+      end
 
-  hello '/hi' do
-    "Hello, this is HELLO verb"
-  end
+      hello '/hi' do
+        "Hello, this is HELLO verb"
+      end
 
-  run!
-end
+      run!
+    end
 
 ### Classic
 
