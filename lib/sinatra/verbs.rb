@@ -9,7 +9,6 @@ module Sinatra
           private #{verb_name.inspect}
         RUBY
         ::Sinatra::Application.module_eval <<-RUBY
-          public
           def self.#{verb_name}(path, opts={}, &bk); route '#{verb_name.to_s.upcase}', path, opts, &bk end
         RUBY
       end
