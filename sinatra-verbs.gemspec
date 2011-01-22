@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["ereslibre@gmail.com"]
   s.homepage    = "http://git.ereslibre.es/sinatra-verbs/"
   s.summary     = %q{Sinatra extension that allows you to add your own HTTP verbs}
-  s.description = %q{Sinatra extension}
+  s.description = %q{Sinatra extension that allows you to add your own HTTP verbs}
   s.rubyforge_project = "sinatra-verbs"
   s.add_runtime_dependency 'sinatra', '>= 1.0.0'
   s.files         = `git ls-files`.split("\n")
