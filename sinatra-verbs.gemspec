@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "sinatra-verbs"
-  s.version     = "0.0.3"
+  s.version     = "0.0.4"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Rafael Fernández López"]
   s.email       = ["ereslibre@gmail.com"]
-  s.homepage    = "http://git.ereslibre.es/sinatra-verbs/"
+  s.homepage    = "http://www.ereslibre.es"
   s.summary     = %q{Sinatra extension that allows you to add your own HTTP verbs}
   s.description = %q{Sinatra extension that allows you to add your own HTTP verbs}
   s.rubyforge_project = "sinatra-verbs"
